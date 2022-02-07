@@ -1,0 +1,28 @@
+<form *ngIf="student" class="container bg-dark text-light p-3 m-auto">
+    <div class="row">
+        <div class="col-3">
+            <img class=" img-fluid" src="/assets/7. Userpic  Image@4x.png">
+        </div>
+        <div class="col-9">
+            <div class="row p-5 gap-5">
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-3" for="name">Name:</label>
+                        <input class="col-9" type="text" name="name" [(ngModel)]="student.name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-3" for="name">Email:</label>
+                        <input class="col-9" type="text" name="email" [(ngModel)]="student.email">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <button (click)="update()" class="btn btn-green bg-light w-25 m-auto">Update</button>
+                <button (click)="back()" class="btn btn-green bg-light w-25 m-auto">Back</button>
+            </div>
+        </div>
+    </div>
+</form>

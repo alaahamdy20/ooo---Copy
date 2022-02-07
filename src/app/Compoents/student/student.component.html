@@ -1,0 +1,6 @@
+<th scope="row">{{student.id}}</th>
+<td class="col">{{student.name}}</td>
+<td class="col">{{student.email}}</td>
+<td class="col"><a [routerLink]="'/view/' + student.id" class="btn btn-outline-success">View</a></td>
+<td class="col"><a [routerLink]="'/update/' + student.id" class="btn btn-outline-primary">Update</a></td>
+<td class="col"><a (click)="delete()" class="btn btn-outline-danger">Delete</a></td>
